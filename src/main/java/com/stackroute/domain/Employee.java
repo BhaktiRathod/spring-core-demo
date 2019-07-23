@@ -1,15 +1,18 @@
 package com.stackroute.domain;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Employee {
 
+
+
     private int empId;
     private String empName;
 
-//   @Autowired
-//    @Qualifier("bean1")
+    @Autowired
+    @Qualifier("bean1")
     private EmployeeRecord employeeRecord;
 
     public Employee() {
